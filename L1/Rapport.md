@@ -41,3 +41,10 @@
 
 # 3.
 
+Sous la forme d'un attribut de type d'association "Interprétation" où Instrument est une attribut.
+Il est également possible de le représenter sous la forme d'une association ternaire si la Instrument devenait une classe plus complexe (tel que possédant attributs fabricant, année de fabrication, état, etc) mais nous avons décidé de garder une structure simple.
+
+# 4.
+
+# 5.
+
