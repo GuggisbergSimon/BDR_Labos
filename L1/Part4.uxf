@@ -1,1 +1,34 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>120</x><y>210</y><w>210</w><h>180</h></coordinates><panel_attributes>Logement
+--
+_id_
+Adresse
+   Rue
+   Num
+NumLogement
+Superficie
+Loyer
+dateConstruction
+NbrPiece
+ChargesForfaitaires</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>210</y><w>210</w><h>70</h></coordinates><panel_attributes>Commune
+--
+_NPA_
+Nom</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>230</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+est situé &gt;</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>300</y><w>210</w><h>130</h></coordinates><panel_attributes>Locataire
+--
+_id_
+Nom
+Prenom
+Date de naissance
+NumTel
+NbrPersonne</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>310</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..1
+&lt; habite</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>450</y><w>210</w><h>60</h></coordinates><panel_attributes>Historique
+--
+DateDebut
+DateFin</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>370</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>360</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+historique &gt;</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element></diagram>
