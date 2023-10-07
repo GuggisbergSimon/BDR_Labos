@@ -1,33 +1,146 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>160</y><w>210</w><h>70</h></coordinates><panel_attributes>Disque
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>160</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Disque
 --
 _Titre_
 AneeParution
-Producteur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>440</y><w>210</w><h>90</h></coordinates><panel_attributes>Oeuvre
+Producteur</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>440</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Oeuvre
 --
 _id_
 Titre
 AnneeParution
-GenreMusique: Enum</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>150</y><w>210</w><h>70</h></coordinates><panel_attributes>Piste
+GenreMusique: Enum</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>150</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Piste
 --
 _id_
 duree
-dateEnregistrement</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>210</y><w>130</w><h>250</h></coordinates><panel_attributes>lt=-
+dateEnregistrement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>220</y>
+      <w>130</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1
 m2=1..*
-&lt; contient</panel_attributes><additional_attributes>90;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>180</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+&lt; contient</panel_attributes>
+    <additional_attributes>90.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>180</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1..*
 m2=*
-contient &gt;</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>440</y><w>210</w><h>70</h></coordinates><panel_attributes>Artiste
+contient &gt;</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>440</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Artiste
 --
 _id_
 Nom
 Prenom
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>460</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>460</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1
 m2=*
-cree &gt;</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>210</y><w>260</w><h>260</h></coordinates><panel_attributes>lt=-
+cree &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>220</y>
+      <w>260</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1
 m2=*
-interprete &gt;</panel_attributes><additional_attributes>10;240;240;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>290</y><w>210</w><h>50</h></coordinates><panel_attributes>Interpretation
+interprete &gt;</panel_attributes>
+    <additional_attributes>10.0;230.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>290</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Interpretation
 --
-instrument: Enum</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>320</y><w>60</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;40;40</additional_attributes></element></diagram>
+instrument: Enum</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>320</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;40.0</additional_attributes>
+  </element>
+</diagram>

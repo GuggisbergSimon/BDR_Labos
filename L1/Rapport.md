@@ -1,5 +1,7 @@
 # 2.
 
+![2](Part2.png)
+
 ## (a)
 
 - A pas possible car cela implique qu'il y a une seule consultation par cours
@@ -41,20 +43,28 @@
 
 # 3.
 
+![3](Part3.png)
+
 Sous la forme d'un attribut de type d'association "Interprétation" où Instrument est une attribut.
 Il est également possible de le représenter sous la forme d'une association ternaire si la Instrument devenait une classe plus complexe (tel que possédant attributs fabricant, année de fabrication, état, etc) mais nous avons décidé de garder une structure simple.
 
 # 4.
 
+![4](Part4.png)
+
 Nous avons décidé d'ajouter un attribut de type d'association pour conserver l'historique des locations. La classe correspondante contient également la location actuelle.
 
 # 5.
+
+![5](Part5.png)
 
 Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant.
 
 Un assistant-étudiant est autant un assistant qu'un étudiant master et nous avons représenté cela via un double héritage.
 
 # 6.
+
+![6](Part6.png)
 
 Il est impossible de représenter via un MCD les 15 UE connues puisque cela relève d'avantage de la logique, et donc des couches supérieures de l'implémentation de la base de données, que de la conception.
 
