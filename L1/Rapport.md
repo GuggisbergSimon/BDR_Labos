@@ -46,5 +46,22 @@ Il est également possible de le représenter sous la forme d'une association te
 
 # 4.
 
+Nous avons décidé d'ajouter un attribut de type d'association pour conserver l'historique des locations. La classe correspondante contient également la location actuelle.
+
 # 5.
 
+Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant.
+
+Un assistant-étudiant est autant un assistant qu'un étudiant master et nous avons représenté cela via un double héritage.
+
+# 6.
+
+Il est impossible de représenter via un MCD les 15 UE connues puisque cela relève d'avantage de la logique, et donc des couches supérieures de l'implémentation de la base de données, que de la conception.
+
+a) la note de l'étudiant pour chaque épreuve est stockée dans un attribut de type d'association
+
+b) Pas spécifiquement, nous pourrions enlever l'associant direct entre étudiant et UE, mais, afin de mieux représenter la situation et de traiter les informations, nous avons décidé de faire cette association directe. La manière dont nous avons implémenté le point c) nous donne également raison pour ce point.
+
+c) le type d'association Selection permet de stocker la moyenne pour chaque couple UE-Etudiant, mais à noter que pour tout ce qui est calculs légers il est meilleure pratique de ne pas les stocker de cette manière car cela requière une mise à jour si changement d'évalutations personnelle
+
+d) En ajoutant la classe Salle, dans laquelle se passent zéro ou plusieurs évaluations, et qui sont surveillés par un ou plusieurs enseignants. Le type d'association Surveillance qui contient les heures de début et de fin de ladite surveillance d'un couple salle-surveillant permet ainsi de suivre le temps de présence passé dans chaque salle, pour chaque enseignant.
