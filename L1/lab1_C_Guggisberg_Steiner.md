@@ -62,7 +62,7 @@ Nous avons décidé d'ajouter un attribut de type d'association pour conserver l
 
 ![5](Part5.png)
 
-Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant. Une autre approche aurait été d'avoir une association entr étudiant et alumni mais cette première partie d'exercice semblait se concentrer plus sur les notions de disjointure totale/partielle ainsi que de chevauchement.
+Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant. Une autre approche aurait été d'avoir une association entre étudiant et alumni mais cette première partie d'exercice semblait se concentrer plus sur les notions de disjointure totale/partielle ainsi que de chevauchement.
 
 Un assistant-étudiant est autant un assistant qu'un étudiant master et nous avons représenté cela via un double héritage.
 
@@ -80,4 +80,4 @@ b) Pas spécifiquement, nous pourrions enlever l'associant direct entre étudian
 
 c) le type d'association Selection permet de stocker la moyenne pour chaque couple UE-Etudiant, mais à noter que pour tout ce qui est calculs légers il est meilleure pratique de ne pas les stocker de cette manière car cela requière une mise à jour si changement d'évalutations personnelle
 
-d) En ajoutant la classe Salle, dans laquelle se passent zéro ou plusieurs évaluations, et qui sont surveillés par un ou plusieurs enseignants. Le type d'association Surveillance qui contient les heures de début et de fin de ladite surveillance d'un couple salle-surveillant permet ainsi de suivre le temps de présence passé dans chaque salle, pour chaque enseignant.
+d) En ajoutant la classe Salle, dans laquelle se passent zéro à plusieurs évaluations, et qui sont surveillés par un à plusieurs enseignants. Le type d'association Surveillance, qui contient les heures de début et de fin de celle-ci, concerne un couple salle-surveillant et permet ainsi de suivre le temps de présence dans chaque salle, pour chaque enseignant.
