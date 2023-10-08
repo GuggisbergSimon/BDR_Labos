@@ -1,3 +1,7 @@
+# BDR Labo 1 : Modélisation conceptuelle
+
+Ce labo couvre les exercices 2 à 6. Ce labo est réalisé par le groupe composé de Jeremiah Steiner et Simon Guggisberg.
+
 # 2.
 
 ![2](Part2.png)
@@ -46,19 +50,19 @@
 ![3](Part3.png)
 
 Sous la forme d'un attribut de type d'association "Interprétation" où Instrument est une attribut.
-Il est également possible de le représenter sous la forme d'une association ternaire si la Instrument devenait une classe plus complexe (tel que possédant attributs fabricant, année de fabrication, état, etc) mais nous avons décidé de garder une structure simple.
+Il est également possible de le représenter sous la forme d'une association ternaire si la classe Instrument devenait plus complexe (tel que possédant attributs fabricant, année de fabrication, état, etc) mais nous avons décidé de garder une structure simple.
 
 # 4.
 
 ![4](Part4.png)
 
-Nous avons décidé d'ajouter un attribut de type d'association pour conserver l'historique des locations. La classe correspondante contient également la location actuelle.
+Nous avons décidé d'ajouter un attribut de type d'association pour conserver l'historique des locations. La classe correspondante contient également la location actuelle afin de facilement pouvoir retrouver cette information.
 
 # 5.
 
 ![5](Part5.png)
 
-Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant.
+Nous avons décidé de représenter les alumnis comme étant des étudiants, afin de conserver des valeurs communes à celles d'un étudiant. Une autre approche aurait été d'avoir une association entr étudiant et alumni mais cette première partie d'exercice semblait se concentrer plus sur les notions de disjointure totale/partielle ainsi que de chevauchement.
 
 Un assistant-étudiant est autant un assistant qu'un étudiant master et nous avons représenté cela via un double héritage.
 
@@ -67,6 +71,8 @@ Un assistant-étudiant est autant un assistant qu'un étudiant master et nous av
 ![6](Part6.png)
 
 Il est impossible de représenter via un MCD les 15 UE connues puisque cela relève d'avantage de la logique, et donc des couches supérieures de l'implémentation de la base de données, que de la conception.
+
+À noter que le nombre d'évaluations effectuées par un étudiant est égal à 3 fois le nombre d'UE que celui-ci a sélectionné. Ceci est dénoté par la variable "n".
 
 a) la note de l'étudiant pour chaque épreuve est stockée dans un attribut de type d'association
 
